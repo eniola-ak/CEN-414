@@ -1,0 +1,88 @@
+public class Math {
+
+    
+    public static void main(String [] args){
+        
+        int x,y;
+        x = 6; //x is the second to last digit of my matric number
+        y = 9; //y is the last digit of my matric number
+        
+        
+        double cube,squared, absolute, exponent, squareroot;
+
+        //Square root
+        squareroot = Math.sqrt(1);
+        //Absolute
+        absolute = Math.abs(-1);
+        //Power
+        squared = Math.pow(0,1);
+        //Exponent
+        exponent = Math.exp(0);
+        //Cube
+        cube = Math.cbrt(1);
+        
+        System.out.println("The square root of the last two digits are "+ squareroot);
+        System.out.println("The square root of the last two digits are "+ absolute);
+        System.out.println("The square root of the last two digits are "+ squared);
+        System.out.println("The square root of the last two digits are "+ exponent);
+        System.out.println("The cube of the last two digits are "+ cube);
+
+        
+        
+        // Using IF statements
+       
+        if( x > y){
+            System.out.println("it is greater");
+        }else if( x < y){
+            System.out.println("it is not greater");
+        }else{
+            System.out.println("They are equal");
+        }
+        
+        
+         // Conditional ternary operator
+         
+        String Statement1, Statement2;
+        Statement1 = "Hello";
+        Statement2 = "Hi";
+        
+        String name;
+        name = x > y ? Statement1  : Statement2 ;
+        System.out.println(name);
+        
+        
+        
+        
+         // Switch operator
+         
+         switch(0 * 1){
+             case 0 :
+                 System.out.println("Output is correct");
+             default :
+                 System.out.println("Output is not correct");
+         }
+         
+         
+         // bit-wise Operators
+        
+         int AND = x & y;
+         int OR = x | y;
+         int NOR = x ^ y;
+
+         System.out.println("Output is" + AND);
+         System.out.println("Output is" + OR);
+         System.out.println("Output is" + NOR);
+         
+         /**
+         * For loops
+         */
+         for(int i = 0; i<= 69; i++){
+             if(i == 0){
+                 System.out.println(i);
+             }
+             
+         }
+         
+
+    }
+}
